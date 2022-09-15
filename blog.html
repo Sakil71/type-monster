@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body class="container bg-dark">
+  <header class="bg-warning">
+    <h1 class="text-center my-5 fw-bold text-success">There are 4 blogs in Assignment-7</h1>
+  </header>
+
+  <main>
+    <div class="row mb-4">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body bg-info">
+            <h4 class="card-title fw-bold">1. Differences between Local-Storage and Session-Storage</h4>
+            <div class="p-3">
+              <h5 class="fw-bold">Local Storage:</h5>
+              <p class="card-text">With web storage, web applications can store data locally within the user's browser.
+              </p>
+              <p>Local and session storage are JavaScript APIs that you can use to store data on the client-side. They
+                allow a website to store data on the browser and instruct the browser to access it later on.</p>
+              <p>Depending on your needs, you can use local or session storage to store data. Both storage methods are
+                similar to cookies but without the same privacy concerns surrounding cookies. Therefore, most modern
+                websites prefer to use web storage methods only or combine them with cookies as a fallback.
+
+                Unlike cookies, local storage and session storage do not send data to the server via HTTP headers. You
+                should use them for client-side functionality only.
+
+                Additionally, local and session storage each have a storage limit of around 5 MB per domain. They
+                provide more storage than cookies, which only have a capacity of 4 KiB per cookie</p>
+              <h5 class="fw-bold">Session Storage:</h5>
+              <p>A browsing session approximates your use of a website. If you visit a site, browse around for a bit,
+                then turn off your computer, you can think of that time as a single session. Your browser configuration
+                may change this in subtle ways, but a session aims to represent the chunk of time you interact with a
+                site.</p>
+              <p>Session storage is unique to each browser tab. If you open a new tab and navigate to the same site,
+                you'll start a new session with its own storage. However, if you use a "duplicate tab" feature in your
+                browser, that may reuse the same session. You can't rely too much on the specific details of a
+                "session"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body bg-info">
+            <h4 class="card-title fw-bold">2. Differences between Global scope and Block scope</h4>
+            <div class="p-3">
+              <h5 class="fw-bold">Global Scope:</h5>
+              <p class="card-text">In a browser environment, the global scope is controlled by the window object while
+                in Node. js, it's controlled by the global object. Block scopes are what you get when you use if
+                statements, for statements, and the like.</p>
+              <p>JavaScript ES6 has different ways to declare and use variables. This often leds to confusion about when
+                to use which keyword, in this article I have made this easy to figure out when to use which keyword.</p>
+              <p>In order to know which keyword to use we must first know about the scope in javascript. As the name
+                says it scope means which variable is accessible and upto which point it is accessible.
+                So, in javascript the whole document is global scope and all the other functions and variables are
+                contained in this global scope.</p>
+              <p></p>
+              <h5 class="fw-bold">Block Scope:</h5>
+              <p>A variable when declared inside the if or switch conditions or inside for or while loops, are
+                accessible within that particular condition or loop. To be consise the variables declared inside the
+                curly braces are called as within block scope.</p>
+              <p>Coming back to the use of keywords,
+                var is called as function scope that is if a variable is declared using var keyword it will be
+                accessible throughout the function.</p>
+              <p>let & const are also called as block scope that is they are accessible within that particular block.
+                Here let is used for variable which can be changed as we proceed through the program whereas const is
+                used for a variable which doesn't change till the program ends, that is it remains constant throughout
+                the program.</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
